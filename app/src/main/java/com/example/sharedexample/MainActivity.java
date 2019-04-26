@@ -100,4 +100,22 @@ private FirebaseAuth mAuth;
 
 
     }
+
+    public void reset(View view) {
+        if (Username.getText().toString().isEmpty()){
+            Username.setError("Required");
+            return;
+
+        }
+
+        String username = Username.getText().toString();
+        mAuth.sendPasswordResetEmail(username).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if(task.isSuccessful()){
+                    Toast.makeText(getApplicationContext(),"Email sent", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+    }
 }
