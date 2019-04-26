@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "189471307847",
+    "firebase_url": "https://primenotify.firebaseio.com",
+    "project_id": "primenotify",
+    "storage_bucket": "primenotify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189471307847:android:e67e213eb957cb4b",
+        "android_client_info": {
+          "package_name": "com.example.sharedexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189471307847-oiclq5iqhs7sup3g0rf4osiaa8p2bgm3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sharedexample",
+            "certificate_hash": "56c3d0b5b629c33a1bea8b5adc324a3f068810eb"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc5j__rXaXEih1tZsjc8gtDWSisE9Z4Hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189471307847-hdvae8v7qs93a4i5337a8b711vjsevqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
