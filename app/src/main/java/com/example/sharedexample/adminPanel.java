@@ -54,10 +54,19 @@ adminConfig = new AdminPreferenceConfig(this);
 }
 
 
+
     mAuth.createUserWithEmailAndPassword(email,pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
     @Override
     public void onComplete(@NonNull Task<AuthResult> task) {
         if(task.isSuccessful()){
+            mAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if (task.isSuccessful()){
+                        Toast.makeText(getApplicationContext(),"Check your Email", Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
        Toast.makeText(getApplicationContext(),"User registration Successful", Toast.LENGTH_LONG).show();
    }
          else{

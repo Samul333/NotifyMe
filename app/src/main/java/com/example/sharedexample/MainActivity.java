@@ -50,13 +50,15 @@ private FirebaseAuth mAuth;
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                        if(mAuth.getCurrentUser().isEmailVerified()) {
 
-                   Intent intent = new Intent(getApplicationContext(),SucessAcitivity.class);
-                   intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                   startActivity(intent);
-                    preferenceConfig.writeLoginStatus(true);
-                    finish();
 
+                            Intent intent = new Intent(getApplicationContext(), SucessAcitivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(intent);
+                            preferenceConfig.writeLoginStatus(true);
+                            finish();
+                        }
                 }
                 else {
                     Toast.makeText(getApplicationContext(),"Please try again", Toast.LENGTH_LONG);
