@@ -9,25 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".adminPanel"></activity>
-
+        <activity android:name=".Student_home"></activity>
+        <activity android:name=".View_pdf_files" android:parentActivityName=".SucessAcitivity"/>
+        <activity android:name=".UpPdf" android:parentActivityName=".adminPanel" />
+        <activity android:name=".Upfile" />
+        <activity android:name=".adminPanel" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
-
         </activity>
-        <activity android:name=".SucessAcitivity" />
+        <activity android:name=".SucessAcitivity" android:parentActivityName=".Student_home" />
+
         <service android:name=".Service.MyFirebaseInstanceService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
-
         </service>
     </application>
 

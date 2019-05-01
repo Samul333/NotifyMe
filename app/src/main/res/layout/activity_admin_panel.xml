@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".adminPanel"
-    android:background="@drawable/pagelayout">
+    android:background="@drawable/uiv2">
 
     <TextView
         android:text="Register student's account here!"
@@ -68,8 +68,10 @@
         android:layout_marginBottom="100dp"
         android:onClick="regi"
         android:text="Register"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.17"
@@ -96,6 +98,8 @@
         android:layout_marginBottom="160dp"
         android:onClick="reset"
         android:text="Reset"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -114,8 +118,27 @@
         android:layout_marginBottom="88dp"
         android:onClick="logout"
         android:text="logout"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="88dp"
+        android:onClick="fileup"
+        android:text="Upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

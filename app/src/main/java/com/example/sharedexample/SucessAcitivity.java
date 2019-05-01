@@ -5,6 +5,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -18,6 +20,7 @@ MainActivity obj = new MainActivity();
     int Flag = 0;
     int FlagBBA = 0;
     int FlagBIM = 0;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,16 +45,19 @@ MainActivity obj = new MainActivity();
     }
 
     public void subCSIT(View view) {
+        textView =findViewById(R.id.textView11);
 
         if(Flag == 0){
         FirebaseMessaging.getInstance().subscribeToTopic("CSIT");
         Toast.makeText(this,"You are now Subscribed to CSIT",Toast.LENGTH_SHORT).show();
         Flag++;
+        textView.setText("Subscribed");
         }
         else {
             FirebaseMessaging.getInstance().unsubscribeFromTopic("CSIT");
             Toast.makeText(this,"You are now Unsubscribed to CSIT",Toast.LENGTH_SHORT).show();
             Flag--;
+            textView.setText("");
         }
     }
 
@@ -80,5 +86,10 @@ MainActivity obj = new MainActivity();
             Toast.makeText(this,"You are now Unsubscribed to BIM",Toast.LENGTH_SHORT).show();
             FlagBIM--;
         }
+    }
+
+    public void viewFiles(View view) {
+        startActivity(new Intent(this, View_pdf_files.class));
+
     }
 }

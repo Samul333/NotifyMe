@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_pdf_files">
+
+    <EditText
+android:layout_width ="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/searchFilter"
+        ></EditText>
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/searchFilter"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"></ListView>
+
+</RelativeLayout>

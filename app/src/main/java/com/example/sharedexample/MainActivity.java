@@ -53,11 +53,15 @@ private FirebaseAuth mAuth;
                         if(mAuth.getCurrentUser().isEmailVerified()) {
 
 
-                            Intent intent = new Intent(getApplicationContext(), SucessAcitivity.class);
+                            Intent intent = new Intent(getApplicationContext(), Student_home.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(intent);
                             preferenceConfig.writeLoginStatus(true);
                             finish();
+                        }
+                        else {
+                            Toast.makeText(getApplicationContext(),"User is not verifed", Toast.LENGTH_LONG);
+
                         }
                 }
                 else {

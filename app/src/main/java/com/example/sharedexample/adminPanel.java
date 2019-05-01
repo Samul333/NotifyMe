@@ -93,6 +93,11 @@ adminConfig = new AdminPreferenceConfig(this);
         startActivity(new Intent(this, MainActivity.class));
         finish();
     }
+
+    public void fileup(View view) {
+        startActivity(new Intent(this, UpPdf.class));
+
+    }
 }
 //logout code
 
