@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:drawable="@drawable/sprites1" android:duration="100"></item>
+    <item android:drawable="@drawable/sprites2" android:duration="100"></item>
+    <item android:drawable="@drawable/sprites3" android:duration="100"></item>
+    <item android:drawable="@drawable/sprites4" android:duration="100"></item>
+    <item android:drawable="@drawable/sprites5" android:duration="100"></item>
+    <item android:drawable="@drawable/sprites6" android:duration="100"></item>
+
+
+
+</animation-list>

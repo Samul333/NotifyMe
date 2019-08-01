@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/csit"
+            android:title="CSIT"
+            android:icon="@drawable/csit_logo">
+
+        </item>
+        <item android:id="@+id/bim"
+            android:title="BIM"
+            android:icon="@drawable/bim_icon">
+
+        </item>
+        <item android:id="@+id/bba"
+            android:title="BBA"
+            android:icon="@drawable/bba_icon">
+
+        </item>
+
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/share"
+                android:title="View Files"
+                android:icon="@drawable/view_files"/>
+
+            <item android:id="@+id/Send"
+                android:title="Send"/>
+
+
+        </menu>
+
+
+    </item>
+
+</menu>

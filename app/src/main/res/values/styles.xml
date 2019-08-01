@@ -10,4 +10,9 @@
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="App" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">#02189d</item>
+        <item name="android:windowBackground">@drawable/welcome_back</item>
+    </style>
 </resources>

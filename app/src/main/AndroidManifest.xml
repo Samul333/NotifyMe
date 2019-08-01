@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sharedexample">
+    package="com.huske.sharedexample">
 
     <application
         android:allowBackup="true"
@@ -9,19 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Student_home"></activity>
-        <activity android:name=".View_pdf_files" android:parentActivityName=".SucessAcitivity"/>
-        <activity android:name=".UpPdf" android:parentActivityName=".adminPanel" />
-        <activity android:name=".Upfile" />
-        <activity android:name=".adminPanel" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".AbsoTest"></activity>
+        <activity android:name=".Web" />
+        <activity android:name=".PanelAdmin" />
+        <activity android:name=".UpdateBoard" />
+        <activity android:name=".Nav" />
+        <activity android:name=".uploadImage" />
+        <activity
+            android:name=".Welcome_page"
+            android:theme="@style/App">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SucessAcitivity" android:parentActivityName=".Student_home" />
+        <activity android:name=".Student_home" />
+        <activity
+            android:name=".View_pdf_files"
+            android:parentActivityName=".SucessAcitivity" />
+        <activity
+            android:name=".UpPdf"
+            android:parentActivityName=".adminPanel" />
+        <activity android:name=".Upfile" />
+        <activity android:name=".adminPanel" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SucessAcitivity"
+            android:parentActivityName=".Student_home" />
 
         <service android:name=".Service.MyFirebaseInstanceService">
             <intent-filter>
